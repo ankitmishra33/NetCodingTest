@@ -14,7 +14,7 @@ namespace PaymentProcessor.Models.Entity
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=Blogging;Integrated Security=True");            
+                      
         }
 
         public DbSet<Payment> Payments { get; set; }

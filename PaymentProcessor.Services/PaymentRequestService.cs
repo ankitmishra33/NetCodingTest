@@ -10,14 +10,14 @@ namespace PaymentProcessor.Services
 {
     public class PaymentRequestService : IPaymentRequestService
     {
-        private readonly IMapper _mapper;
+        private readonly IMapper _imapper;
         private readonly ICheapPaymentGateway _cheapPaymentGateway;
         private readonly IExpensivePaymentGateway _expensivePaymentGateway;
         private readonly IPaymentRepository _paymentRepository;
         private readonly IPaymentStateRepository _paymentStateRepository;
         public PaymentRequestService(ICheapPaymentGateway cheapPaymentGateway, IExpensivePaymentGateway expensivePaymentGateway, IMapper mapper, IPaymentRepository paymentRepository, IPaymentStateRepository paymentStateRepository)
         {
-            _mapper = mapper;
+            _imapper = mapper;
             _cheapPaymentGateway = cheapPaymentGateway;
             _expensivePaymentGateway = expensivePaymentGateway;
             _paymentRepository = paymentRepository;
@@ -25,14 +25,13 @@ namespace PaymentProcessor.Services
         }
         public async Task<PaymentStateDto> Pay(PaymentRequestDto paymentRequestDto)
         {
-            var paymentEntity = _mapper.Map<PaymentRequestDto, Payment>(paymentRequestDto);
+            var paymentEntity = _imapper.Map<PaymentRequestDto, Payment>(paymentRequestDto);
             paymentEntity = await _paymentRepository.Create(paymentEntity);
 
             var paymentStateEntity = new PaymentState() { Payment = paymentEntity, PaymentId = paymentEntity.PaymentId, CreatedDate = DateTime.Now, State = PaymentStateEnum.Pending.ToString() };
             paymentStateEntity = await _paymentStateRepository.Create(paymentStateEntity);
 
-            //save to db here
-            //send request to various gateway here
+           
             if (paymentRequestDto.Amount <= 20)
             {   
                 var paymentStateDto = await ProcessPaymentStateDto(_cheapPaymentGateway, paymentRequestDto, paymentEntity);
@@ -56,7 +55,7 @@ namespace PaymentProcessor.Services
                 }
                 catch(Exception ex)
                 {
-                    //log exception
+                   
                     if (tryCount == 0)
                     {
                         paymentStateDto = await ProcessPaymentStateDto(_cheapPaymentGateway, paymentRequestDto, paymentEntity);
@@ -79,7 +78,7 @@ namespace PaymentProcessor.Services
                     }
                     catch (Exception ex)
                     {
-                        //log error
+                       
                     }
                     finally
                     {
@@ -88,7 +87,7 @@ namespace PaymentProcessor.Services
                 }
                 return paymentStateDto;
             }
-            throw new Exception("Payment could not be processed");
+            throw new Exception("Payment cant be processed");
         }
 
         private async Task<PaymentStateDto> ProcessPaymentStateDto(IPaymentGateway paymentGateway, PaymentRequestDto paymentRequestDto, Payment paymentEntity)

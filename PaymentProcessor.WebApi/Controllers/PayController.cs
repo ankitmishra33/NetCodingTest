@@ -26,7 +26,7 @@ namespace PaymentProcessor.WebApi.Controllers
         [HttpGet]
         public string Get()
         {
-            return "Payment Processor is online";
+            return "Processor is online";
         }
 
 
@@ -46,7 +46,7 @@ namespace PaymentProcessor.WebApi.Controllers
                     };
 
                     if (!paymentResponse.IsProcessed)
-                        return StatusCode(500, new { error = "Payment could not be processed" });
+                        return StatusCode(500, new { error = "Payment cant be processed" });
                     return Ok(paymentResponse);
                 }
                 else
