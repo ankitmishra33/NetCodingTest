@@ -1,0 +1,12 @@
+D:\paymentapi\PaymentProcessor.Gateways\bin\Debug\netcoreapp3.1\PaymentProcessor.Gateways.deps.json
+D:\paymentapi\PaymentProcessor.Gateways\bin\Debug\netcoreapp3.1\PaymentProcessor.Gateways.dll
+D:\paymentapi\PaymentProcessor.Gateways\bin\Debug\netcoreapp3.1\PaymentProcessor.Gateways.pdb
+D:\paymentapi\PaymentProcessor.Gateways\bin\Debug\netcoreapp3.1\PaymentProcessor.Models.DTO.dll
+D:\paymentapi\PaymentProcessor.Gateways\bin\Debug\netcoreapp3.1\PaymentProcessor.Models.DTO.pdb
+D:\paymentapi\PaymentProcessor.Gateways\obj\Debug\netcoreapp3.1\PaymentProcessor.Gateways.csprojAssemblyReference.cache
+D:\paymentapi\PaymentProcessor.Gateways\obj\Debug\netcoreapp3.1\PaymentProcessor.Gateways.AssemblyInfoInputs.cache
+D:\paymentapi\PaymentProcessor.Gateways\obj\Debug\netcoreapp3.1\PaymentProcessor.Gateways.AssemblyInfo.cs
+D:\paymentapi\PaymentProcessor.Gateways\obj\Debug\netcoreapp3.1\PaymentProcessor.Gateways.csproj.CoreCompileInputs.cache
+D:\paymentapi\PaymentProcessor.Gateways\obj\Debug\netcoreapp3.1\PaymentProcessor.Gateways.csproj.CopyComplete
+D:\paymentapi\PaymentProcessor.Gateways\obj\Debug\netcoreapp3.1\PaymentProcessor.Gateways.dll
+D:\paymentapi\PaymentProcessor.Gateways\obj\Debug\netcoreapp3.1\PaymentProcessor.Gateways.pdb

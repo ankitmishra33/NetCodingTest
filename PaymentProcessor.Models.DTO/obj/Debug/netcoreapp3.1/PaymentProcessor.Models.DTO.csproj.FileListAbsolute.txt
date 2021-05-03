@@ -1,0 +1,9 @@
+D:\paymentapi\PaymentProcessor.Models.DTO\bin\Debug\netcoreapp3.1\PaymentProcessor.Models.DTO.deps.json
+D:\paymentapi\PaymentProcessor.Models.DTO\bin\Debug\netcoreapp3.1\PaymentProcessor.Models.DTO.dll
+D:\paymentapi\PaymentProcessor.Models.DTO\bin\Debug\netcoreapp3.1\PaymentProcessor.Models.DTO.pdb
+D:\paymentapi\PaymentProcessor.Models.DTO\obj\Debug\netcoreapp3.1\PaymentProcessor.Models.DTO.csprojAssemblyReference.cache
+D:\paymentapi\PaymentProcessor.Models.DTO\obj\Debug\netcoreapp3.1\PaymentProcessor.Models.DTO.AssemblyInfoInputs.cache
+D:\paymentapi\PaymentProcessor.Models.DTO\obj\Debug\netcoreapp3.1\PaymentProcessor.Models.DTO.AssemblyInfo.cs
+D:\paymentapi\PaymentProcessor.Models.DTO\obj\Debug\netcoreapp3.1\PaymentProcessor.Models.DTO.csproj.CoreCompileInputs.cache
+D:\paymentapi\PaymentProcessor.Models.DTO\obj\Debug\netcoreapp3.1\PaymentProcessor.Models.DTO.dll
+D:\paymentapi\PaymentProcessor.Models.DTO\obj\Debug\netcoreapp3.1\PaymentProcessor.Models.DTO.pdb

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PaymentProcessor.Gateways\PaymentProcessor.Gateways.csproj" />
+    <ProjectReference Include="..\PaymentProcessor.Models.DTO\PaymentProcessor.Models.DTO.csproj" />
+    <ProjectReference Include="..\PaymentProcessor.Models.Entity\PaymentProcessor.Models.Entity.csproj" />
+  </ItemGroup>
+
+</Project>

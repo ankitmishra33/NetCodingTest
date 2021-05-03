@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "PaymentProcessor.Gateways/1.0.0": {
+        "dependencies": {
+          "PaymentProcessor.Models.DTO": "1.0.0"
+        },
+        "runtime": {
+          "PaymentProcessor.Gateways.dll": {}
+        }
+      },
+      "PaymentProcessor.Models.DTO/1.0.0": {
+        "runtime": {
+          "PaymentProcessor.Models.DTO.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PaymentProcessor.Gateways/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PaymentProcessor.Models.DTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
